@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v3
       # At this point, your app would connect to the database and use it
       # Here we are showing the availability of the DB via the SQLcl CLI
-      - uses: gwenzl/setup-oracle-sqlcl@v1
+      - uses: gvenzl/setup-oracle-sqlcl@v1
       # Connect to the database and run a SQL command
       - name: Run SQLcl
         run: |
