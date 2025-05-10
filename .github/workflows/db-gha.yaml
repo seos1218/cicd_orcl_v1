@@ -9,7 +9,11 @@ jobs:
       # Label used to access the service container
       oracle:
         # Container registry image
+<<<<<<< HEAD
         image: gvenzl/oracle-freeslim
+=======
+        image: gvenzl/oracle-free:slim
+>>>>>>> bf0c08fb49ba9f74cc4d51d9904c5bf7927b6f2d
         # Provide environment variables to the container
         env:
           ORACLE_RANDOM_PASSWORD: y
@@ -28,6 +32,10 @@ jobs:
       - uses: actions/checkout@v3
       # At this point, your app would connect to the database and use it
       # Here we are showing the availability of the DB via the SQLcl CLI
+<<<<<<< HEAD
+=======
+
+>>>>>>> bf0c08fb49ba9f74cc4d51d9904c5bf7927b6f2d
       - uses: gvenzl/setup-oracle-sqlcl@v1
       # Connect to the database and run a SQL command
       - name: Run SQLcl
