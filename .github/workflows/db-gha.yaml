@@ -9,7 +9,7 @@ jobs:
       # Label used to access the service container
       oracle:
         # Container registry image
-        image: gwenzl/oracle-freeslim
+        image: gvenzl/oracle-free:slim
         # Provide environment variables to the container
         env:
           ORACLE_RANDOM_PASSWORD: y
